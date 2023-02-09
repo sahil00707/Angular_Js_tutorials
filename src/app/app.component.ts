@@ -7,5 +7,12 @@ import { FormData } from './form-data';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  form=new FormData('sahil',12,'male','mango',12);
+  list:any[]=[];
+  addTask(input:string){
+this.list.push({id:this.list.length,task:input});
+
+  }
+  removeTask(id:number){
+this.list=this.list.filter(item=>item.id!==id);
+  }
 }

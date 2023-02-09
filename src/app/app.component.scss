@@ -1,4 +1,50 @@
-h1{
-    color: red;
+h2{
+    color: white;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.all{
+    width: fit-content;
+    margin: auto;
+}
+.input_btn{
+    width: fit-content;
+    margin: auto;
+    #task{
+        border: 2px solid white;
+        background-color: transparent;
+        width: 300px;
+        padding: 15px 5px 6px 5px;
+        font-size: 25px;
+        border-radius: 5px;
+        color: white;
+        outline: none;
+        display: block;
+    }
+    button{
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 20px;
+        background-color: white;
+        border-color: white;
+        color: black;
+        font-weight: bolder;
+        outline: none;
+    }
+}
+.list{
+   
+    ul{
+        li{
+            color: white;
+           
+            button{
+                color: white;
+                border: none;
+                background-color: red;
+                padding: 10px 25px;
+                margin-left: 15px;
+            }
+        }
+    }
 }
