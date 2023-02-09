@@ -1,3 +1,22 @@
-<h1>My Counters</h1>
-<app-counter>
-</app-counter>
+<form #myform="ngForm" >
+{{form|json}}
+    <input type="text" placeholder="Enter your Name" name="name1" >
+    <br>
+    <input type="number" placeholder="Enter your number" name="number" [(ngModel)]="form.number">
+    <!-- <br>
+    <select name="fruit" id="fruit">
+        <option value="{{myFruit}}" *ngFor="let myFruit of fruits" [ngModel]="form.fruit">abc</option>
+    </select>
+    <div>
+        <input type="radio" value="male" id="male" name="gender" [ngModel]="form.gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" value="female" name="gender" [ngModel]="form.gender">
+        <label for="female">Female</label>
+    </div>
+    <div>
+        <input type="checkbox" value="18" name="age" id="c1" [ngModel]="form.age">
+        <label for="c1">18</label>
+        <input type="checkbox" value="19" name="age" id="c2" [ngModel]="form.age">
+        <label for="c2">19</label>
+    </div> -->
+</form>

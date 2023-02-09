@@ -1,20 +1,24 @@
 import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-//import { NavbarModule } from './navbar/navbar.module';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CounterComponent } from './counter/counter.component';
-//import { MyCardComponent } from './my-card/my-card.component';
+import { MyFormComponent } from './my-form/my-form.component';
+//import { FormComponent } from './form/form.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CounterComponent,
- //   MyCardComponent
+    MyFormComponent,
+   // FormComponent,
+  
+ 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,//NavbarModule
+    AppRoutingModule,
+    FormsModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
