@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    button{
+        padding: 10px 25px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-weight: bolder;
+    }
+    h1{
+        margin: 0 20px;
+    }
+}
