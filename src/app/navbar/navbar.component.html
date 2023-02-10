@@ -1,0 +1,33 @@
+<div class="navbar">
+    <div class="logo">
+        <div class="img">
+            <img src="assets/images/boat.png" alt="">
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>
+                <select name="category" id="category" >
+                    <option value="" selected>Category</option>
+                    <option value="{{i}}" *ngFor="let i of category">
+                       {{i}}
+                    </option>    
+                </select>
+            </li>
+            <li>
+                <select name="category" id="category" >
+                    <option value="" selected>More</option>
+                    <option value="{{i}}" *ngFor="let i of more">
+                       {{i}}
+                    </option>    
+                </select>
+            </li>      
+        </ul>
+    </div>
+    <div class="cart">
+        <div class="img">
+            <img src="assets/images/cart.png" alt="">
+        </div>
+    </div>
+</div>

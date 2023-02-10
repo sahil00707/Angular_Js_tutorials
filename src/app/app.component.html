@@ -1,13 +1,2 @@
-<h2>TODO LIST</h2>
-<div class="all">
-<div class="input_btn">
-    <textarea name="task" id="task" cols="30" rows="5" #input placeholder="Enter Text"></textarea>
-   
-    <button (click)="addTask(input.value)">Add Task</button>
-</div>
-<div class="list">
-    <ul *ngFor="let item of list">
-        <li>  {{item.task}}<button (click)="removeTask(this.item.id)">Remove</button></li>
-    </ul>
-</div>
-</div>
+<app-navbar></app-navbar>
+<app-head></app-head>
