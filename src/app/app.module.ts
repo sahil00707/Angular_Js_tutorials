@@ -3,8 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HeadComponent } from './head/head.component';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 
 //import { FormComponent } from './form/form.component';
 
@@ -12,8 +11,7 @@ import { HeadComponent } from './head/head.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    HeadComponent,
+   
   
    // FormComponent,
   
@@ -22,7 +20,8 @@ import { HeadComponent } from './head/head.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
