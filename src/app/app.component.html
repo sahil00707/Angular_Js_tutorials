@@ -1,11 +1,4 @@
-<div class="body">
-    <div class="center">
-        <img src="assets/images/quote.png" alt="" >
-    <h1>{{user.slip.advice}}</h1>
-    <!-- <img src="assets/images/quote.png" alt=""> -->
-
-    <button (click)="getApi()">
-        Generate
-    </button>
-</div>
-</div>
+<a  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/">Home</a>
+<a  routerLinkActive="active"  routerLink="/parent">parent</a>
+<a  routerLinkActive="active"  routerLink="/child">child</a>
+<router-outlet></router-outlet>
