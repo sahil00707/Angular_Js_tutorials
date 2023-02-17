@@ -1,0 +1,16 @@
+<form action="#" class="form" #myform="ngForm">
+    
+   
+    <input  placeholder="Enter Your Name" [ngModel] type="number" name="name" [class.is-invalid]="name.invalid" #name="ngModel" class="input" >
+ <br><br>   <input  placeholder="Enter Your Number" ngModel name="Number"  type="number">
+
+ <div class="radio_btns">
+    <input name="car_name" ngModel name="car" value="BMW" type="radio">BMW
+    <input name="car_name" ngModel name="car" value="Audi" type="radio">AUDI
+    <input name="car_name" ngModel name="car" value="Mercedez" type="radio">Mercedez
+ </div>
+ <div class="checkbox_btns">
+    <input type="checkbox" ngModel name="checkbox_1" id="" value="Mango" >Mango
+    <input type="checkbox" ngModel name="checkbox_1" id="" value="Apple" >Apple
+ </div>
+</form>
