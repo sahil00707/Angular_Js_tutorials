@@ -1,16 +1,16 @@
-<form action="#" class="form" #myform="ngForm">
-    
-   
-    <input  placeholder="Enter Your Name" [ngModel] type="number" name="name" [class.is-invalid]="name.invalid" #name="ngModel" class="input" >
- <br><br>   <input  placeholder="Enter Your Number" ngModel name="Number"  type="number">
-
- <div class="radio_btns">
-    <input name="car_name" ngModel name="car" value="BMW" type="radio">BMW
-    <input name="car_name" ngModel name="car" value="Audi" type="radio">AUDI
-    <input name="car_name" ngModel name="car" value="Mercedez" type="radio">Mercedez
- </div>
- <div class="checkbox_btns">
-    <input type="checkbox" ngModel name="checkbox_1" id="" value="Mango" >Mango
-    <input type="checkbox" ngModel name="checkbox_1" id="" value="Apple" >Apple
+<form action="#" #myform="ngForm">
+   {{mydata|json}}
+   <br>
+   {{myform.value|json}}
+   <br>
+   <input name="name" required #name="ngModel" type="text"  [(ngModel)]="mydata.name" [class.is-invalid]="name.invalid" >
+   <br>
+  <p [class.show]="name.valid">name is reqired</p>
+   <br>
+   <input name="email" required #email="ngModel"  [(ngModel)]="mydata.email"  type="email" [class.is-dirty]="email.dirty" class="input">
+ <br>
+   <input name="number" required #number="ngModel"  [(ngModel)]="mydata.number" type="number" [class.is-invalid]="number.invalid" class="input">
+ <div *ngIf="number.errors&&number.invalid">
+<p *ngIf="number.errors?.['required']">hello</p>
  </div>
 </form>

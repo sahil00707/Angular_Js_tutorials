@@ -1,8 +1,10 @@
 .input{
-    background-color: red;
+    background-color: white;
 }
+.ng-invalid {
+    background-color: red;
 
-// .ng-invalid {
-//     background-color: white;
-
-// }
+}
+.show{
+    display: none;
+}

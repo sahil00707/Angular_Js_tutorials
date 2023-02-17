@@ -7,5 +7,5 @@ import { Myf } from '../myf';
 })
 export class MyFormComponent {
 
-mydata=new Myf("")
+mydata=new Myf("Dhruvi","dhruvi144@gmail.com",'123456789')
 }
