@@ -8,12 +8,18 @@ import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { NgIf } from '@angular/common';
 
 import { Router, RouterModule, ROUTES, Routes } from '@angular/router';
-import { MyFormComponent } from './my-form/my-form.component';
+import { AddTaskComponent } from './add-task/add-task.component';
+import { ListTaskComponent } from './list-task/list-task.component';
+import { MyserviceService } from './services/myservice.service';
+import { MyserviceService2 } from './services/myservice2.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyFormComponent,
+    AddTaskComponent,
+    ListTaskComponent,
+
   
  
   ],
@@ -27,7 +33,7 @@ import { MyFormComponent } from './my-form/my-form.component';
     
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
+  providers: [MyserviceService,MyserviceService2],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
