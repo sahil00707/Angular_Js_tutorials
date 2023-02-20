@@ -1,3 +1,4 @@
-<app-add-task></app-add-task>
-
-<p *ngFor="let i of mytasks">{{i}}</p>
+<form [formGroup]="myform" (ngSubmit)="getData()">
+    <input type="text" formControlName="name" >
+    <button type="submit">Submit</button>
+</form>
